@@ -3,6 +3,8 @@ const express = require('express')
 const server = express()
 const handel404error = require('./handlers/404.js')
 const handel500error = require('./handlers/500.js')
+
+
 //LISTEFUN
 function start(port) {
     server.listen(port, () => console.log(`Server started on port ${port}`));
