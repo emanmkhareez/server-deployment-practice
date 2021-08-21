@@ -29,7 +29,7 @@ function handelerdata(req, res) {
         age: "23",
         gender: "femal"
     }
-    res.status(200).json(myinfo)
+    res.status(200).send(myinfo)
 }
 
 function handerlbad(req, res, next) {

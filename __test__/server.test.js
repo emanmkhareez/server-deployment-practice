@@ -24,7 +24,7 @@ describe('express server',()=>{
     
     //assert
     expect(respons.status).toBe(status)
-    expect(typeof respons.body).toEqual('object')
+    expect( typeof  respons.body).toEqual('object')
 
     });
     it('should check error 500',async () =>{
@@ -45,6 +45,7 @@ describe('express server',()=>{
          const response = await request.get(param);
          // assert
          expect(response.status).toBe(status);
+
     })
 });
 
